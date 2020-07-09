@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html ng-app="myapp" ng-controller="myctrl">
+<head>
+	<title>My Wishlist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="materialize.css">
+	<link rel="stylesheet" type="text/css" href="pure.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="wishlist_style.css">
+	<script src="angular.min.js"></script>
+	<script src="wish.js"></script>
+</head>
+<body style="background-color:#F4F4F4; overflow: auto;">
+	<nav class="mynav" style="background-color: #8860D0">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo mylogo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <li><a href="wishlist.html">WishList</a></li>
+        <li><a href="../INT project/test1.html">My profile</a></li>
+        <li><a href="../INT project/signin.html">Login/Signup</a></li>
+  </ul>   
+     <div class="wrap1">
+   <div class="search1">
+      <input type="text" color="black" class="searchTerm1" placeholder="What are you looking for?">
+      <div class="searchButton1">
+      	<img src="download.png">
+      </div>
+      </div>
+</div>
+    </div>
+  </nav>
+
+  <!-- Category Navbar -->
+  <nav class="navbar navbar-light bg-light nav2">
+    <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list nav">
+        <li>
+            <a href="#">New Desktop</a>
+            <div style="margin-left: 2%;">
+              <div class="nav-column">
+                <h3>Cabinets</h3>
+                  <ul>
+                    <li><a href="#">Budget Cabinets</a></li>
+                    <li><a href="#">Premium Cabinets</a></li>
+                    <li><a href="#">ASUS</a></li>
+                    <li><a href="#">MSI</a></li>
+                    <li><a href="#">LENOVO</a></li>
+                    <li><a href="#">CORSHAIR</a></li>
+                    <li><a href="#">STEEL SERIES</a></li>
+                  </ul>
+              </div>
+
+              <div class="nav-column">
+                <h3>Processors</h3>
+                <ul>
+                  <li><a href="#">INTEL</a></li>
+                  <li><a href="#">AMD</a></li>
+                </ul>
+              </div>
+
+              <div class="nav-column">
+                <h3>GPUs</h3>
+                <ul>
+                  <li><a href="#">AMD</a></li>
+                  <li><a href="#">NVIDEA</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <h3>Coolers</h3>
+                <ul>
+                  <li><a href="#">Liquid Cooling</a></li>
+                  <li><a href="#">Fan Cooling</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <h3>Motherboard</h3>
+                <ul>
+                  <li><a href="#">ASUS</a></li>
+                  <li><a href="#">AMD</a></li>
+                  <li><a href="#">INTEL</a></li>
+                  <li><a href="#">GIGABYTE</a></li>
+                  <li><a href="#">CORSHAIR</a></li>
+                  <li><a href="#">DELL</a></li>
+                  <li><a href="#">MSI</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <h3>RAM</h3>
+                <ul>
+                  <li><a href="#">KINGSTON</a></li>
+                  <li><a href="#">SAMSUNG</a></li>
+                  <li><a href="#">CORSHAIR</a></li>
+                  <li><a href="#">GIGABYTE</a></li>
+                  <li><a href="#">TOSHIBA</a></li>
+                  <li><a href="#">STRONTIUM</a></li>
+                  <li><a href="#">SANDISK</a></li>
+                  <li><a href="#">CRUCIAL</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <h3>SSD/HDD</h3>
+                <ul>
+                  <li><a href="#">KINGSTON</a></li>
+                  <li><a href="#">SAMSUNG</a></li>
+                  <li><a href="#">CORSHAIR</a></li>
+                  <li><a href="#">GIGABYTE</a></li>
+                  <li><a href="#">TOSHIBA</a></li>
+                  <li><a href="#">STRONTIUM</a></li>
+                  <li><a href="#">SANDISK</a></li>
+                  <li><a href="#">CRUCIAL</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <h3>Monitors</h3>
+                <ul>
+                  <li><a href="#">LG</a></li>
+                  <li><a href="#">SAMSUNG</a></li>
+                  <li><a href="#">ZEBRONICS</a></li>
+                  <li><a href="#">ACER</a></li>
+                  <li><a href="#">DELL</a></li>
+                  <li><a href="#">ASUS</a></li>
+                  <li><a href="#">BENQ</a></li>
+                  <li><a href="#">60 Hertz</a></li>
+                  <li><a href="#">120 Hertz</a></li>
+                  <li><a href="#">144 Hertz</a></li>
+                  <li><a href="#">240 Hertz</a></li>
+                </ul>
+              </div>
+              <div class="nav-column" style="margin-right: 50px;">
+                <h3>Keyboard/Mouse</h3>
+                <ul>
+                  <li><a href="#">Steel Series</a></li>
+                  <li><a href="#">Hyper X</a></li>
+                  <li><a href="#">HP</a></li>
+                  <li><a href="#">Logitech</a></li>
+                  <li><a href="#">Under 5000</a></li>
+                  <li><a href="#">Under 10,000</a></li>
+                  <li><a href="#">Mechanical Keyboard</a></li>
+                  <li><a href="#">Semi-Mechanical Keyboard</a></li>
+                  <li><a href="#">Budget Keyboard/Mouse</a></li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <h3>Headphones</h3>
+                <ul>
+                  <li><a href="#">Hyper X</a></li>
+                  <li><a href="#">Senhensier</a></li>
+                  <li><a href="#">Logitech</a></li>
+                  <li><a href="#">Steel Series</a></li>
+                  <li><a href="#">Razor</a></li>
+                  <li><a href="#">Under 5000</a></li>
+                  <li><a href="#">Under 15,000</a></li>
+                  <li><a href="#">Budget Headphones</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+        <li>
+            <a href="#" class="pure-menu-link menu cat" id="menuLink1">Peripherals</a>
+            <div style="width: 65%; margin-left: 2%;">
+              <div class="nav-column" style="width: 18%; margin-right: 8%;">
+                <h3>Cabinets</h3>
+                  <ul>
+                    <li><a href="#">Budget Cabinets</a></li>
+                    <li><a href="#">Premium Cabinets</a></li>
+                    <li><a href="#">ASUS</a></li>
+                    <li><a href="#">MSI</a></li>
+                    <li><a href="#">LENOVO</a></li>
+                    <li><a href="#">CORSHAIR</a></li>
+                    <li><a href="#">STEEL SERIES</a></li>
+                  </ul>
+              </div>
+              <div class="nav-column" style="width: 18%;">
+                <h3>Monitors</h3>
+                <ul>
+                  <li><a href="#">LG</a></li>
+                  <li><a href="#">SAMSUNG</a></li>
+                  <li><a href="#">ZEBRONICS</a></li>
+                  <li><a href="#">ACER</a></li>
+                  <li><a href="#">DELL</a></li>
+                  <li><a href="#">ASUS</a></li>
+                  <li><a href="#">BENQ</a></li>
+                  <li><a href="#">60 Hertz</a></li>
+                  <li><a href="#">120 Hertz</a></li>
+                  <li><a href="#">144 Hertz</a></li>
+                  <li><a href="#">240 Hertz</a></li>
+                </ul>
+              </div>
+              <div class="nav-column" style="margin-right: 50px; width: 18%;">
+                <h3>Keyboard/Mouse</h3>
+                <ul>
+                  <li><a href="#">Steel Series</a></li>
+                  <li><a href="#">Hyper X</a></li>
+                  <li><a href="#">HP</a></li>
+                  <li><a href="#">Logitech</a></li>
+                  <li><a href="#">Under 5000</a></li>
+                  <li><a href="#">Under 10,000</a></li>
+                  <li><a href="#">Mechanical Keyboard</a></li>
+                  <li><a href="#">Semi-Mechanical Keyboard</a></li>
+                  <li><a href="#">Budget Keyboard/Mouse</a></li>
+                </ul>
+              </div>
+              <div class="nav-column" style="width: 18%; margin-left: 5%";>
+                <h3>Headphones</h3>
+                <ul>
+                  <li><a href="#">Hyper X</a></li>
+                  <li><a href="#">Senhensier</a></li>
+                  <li><a href="#">Logitech</a></li>
+                  <li><a href="#">Steel Series</a></li>
+                  <li><a href="#">Razor</a></li>
+                  <li><a href="#">Under 5000</a></li>
+                  <li><a href="#">Under 15,000</a></li>
+                  <li><a href="#">Budget Headphones</a></li>
+                </ul>
+              </div>
+              
+           
+        </li>
+        <li>
+          <a href="#">Internals</a>
+            <div style="width: 70%; margin-left: 2%;">
+             <div class="nav-column" style="width: 16%;">
+                <h3>Processors</h3>
+                <ul>
+                  <li><a href="#">INTEL</a></li>
+                  <li><a href="#">AMD</a></li>
+                </ul>
+              </div>
+
+              <div class="nav-column" style="width: 16%;">
+                <h3>GPUs</h3>
+                <ul>
+                  <li><a href="#">AMD</a></li>
+                  <li><a href="#">NVIDEA</a></li>
+                </ul>
+              </div>
+              <div class="nav-column" style="width: 16%;">
+                <h3>Coolers</h3>
+                <ul>
+                  <li><a href="#">Liquid Cooling</a></li>
+                  <li><a href="#">Fan Cooling</a></li>
+                </ul>
+              </div>
+              <div class="nav-column" style="width: 16%;">
+                <h3>Motherboard</h3>
+                <ul>
+                  <li><a href="#">ASUS</a></li>
+                  <li><a href="#">AMD</a></li>
+                  <li><a href="#">INTEL</a></li>
+                  <li><a href="#">GIGABYTE</a></li>
+                  <li><a href="#">CORSHAIR</a></li>
+                  <li><a href="#">DELL</a></li>
+                  <li><a href="#">MSI</a></li>
+                </ul>
+              </div>
+              <div class="nav-column" style="width: 16%;">
+                <h3>RAM</h3>
+                <ul>
+                  <li><a href="#">KINGSTON</a></li>
+                  <li><a href="#">SAMSUNG</a></li>
+                  <li><a href="#">CORSHAIR</a></li>
+                  <li><a href="#">GIGABYTE</a></li>
+                  <li><a href="#">TOSHIBA</a></li>
+                  <li><a href="#">STRONTIUM</a></li>
+                  <li><a href="#">SANDISK</a></li>
+                  <li><a href="#">CRUCIAL</a></li>
+                </ul>
+              </div>
+              <div class="nav-column" style="width: 16%;">
+                <h3>SSD/HDD</h3>
+                <ul>
+                  <li><a href="#">KINGSTON</a></li>
+                  <li><a href="#">SAMSUNG</a></li>
+                  <li><a href="#">CORSHAIR</a></li>
+                  <li><a href="#">GIGABYTE</a></li>
+                  <li><a href="#">TOSHIBA</a></li>
+                  <li><a href="#">STRONTIUM</a></li>
+                  <li><a href="#">SANDISK</a></li>
+                  <li><a href="#">CRUCIAL</a></li>
+                </ul>
+              </div>
+            </div>
+        </li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a href="#" id="menuLink1" class="pure-menu-link menu cat">Laptops</a>
+            <!-- <ul class="pure-menu-children cat">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tumblr Blog</a></li>
+            </ul> -->
+        </li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a href="#" id="menuLink1" class="pure-menu-link menu cat">Furniture</a>
+            <!-- <ul class="pure-menu-children cat">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tumblr Blog</a></li>
+            </ul> -->
+        </li>
+       </ul>
+</div>
+</nav>
+
+<div class="heading">
+	<p class="Wishlist"> My Wishlist</p>
+</div>
+<div class="item" ng-controller="myctrl" ng-show="IsVisible">
+	<a href="#"><img src="mousepad.jpg" class="productimage"></a>
+	<a href="#"><img src="delete.jpg" class="deleteimg" ng-click="ShowHide()"></a>
+	<a href="#"><div class="textarea" >
+		<p style="margin: 10px 0px 5px 5px; color: black;">Steel Series Accuracy mouse pad</p>
+		<p style="margin: 5px 0px 5px 5px; color: black;"><b>Rs 2000 </b> <strike style="font-size: 12px; color: grey; margin: 5px 0px 5px 5px">Rs 3500</strike></p>
+	</div></a>
+</div>
+<div class="item" ng-controller="myctrl" ng-show="IsVisible">
+	<a href="#"><img src="mouse1.png" class="productimage"></a>
+	<a href="#"><img src="delete.jpg" class="deleteimg" ng-click="ShowHide()"  ></a>
+	<a href="#"><div class="textarea">
+		<p style="margin: 10px 0px 5px 5px; color: black;">Steel Series Hyperx S140</p>
+		<p style="margin: 5px 0px 5px 5px; color: black;"><b>Rs 8000 </b> <strike style="font-size: 12px; color: grey; margin: 5px 0px 5px 5px">Rs 10000</strike></p>
+	</div></a>
+</div>
+<div class="item" ng-controller="myctrl" ng-show="IsVisible">
+	<a href="#"><img src="mouse2.jpg" class="productimage"></a>
+	<a href="#"><img src="delete.jpg" class="deleteimg" ng-click="ShowHide()"></a>
+	<a href="#"><div class="textarea">
+		<p style="margin: 10px 0px 5px 5px;color: black;">Steel Series Hyperion S180</p>
+		<p style="margin: 5px 0px 5px 5px;color: black;"><b>Rs 6000 </b> <strike style="font-size: 12px; color: grey; margin: 5px 0px 5px 5px">Rs 8000</strike></p>
+	</div></a>
+</div>
+<div class="item" ng-controller="myctrl" ng-show="IsVisible">
+	<a href="#"><img src="keyboard1.jpg" class="productimage"></a>
+	<a href="#"><img src="delete.jpg" class="deleteimg" ng-click="ShowHide()"></a>
+	<a href="#"><div class="textarea">
+		<p style="margin: 10px 0px 5px 5px; color: black;">Steel Series Mechanical M550 Keyboard</p>
+		<p style="margin: 5px 0px 5px 5px;color: black;"><b>Rs 8000 </b> <strike style="font-size: 12px; color: grey; margin: 5px 0px 5px 5px">Rs 9000</strike></p>
+	</div></a>
+</div>
+<div class="item" ng-controller="myctrl" ng-show="IsVisible">
+	<a href="#"><img src="keyboard2.jpg" class="productimage"></a>
+	<a href="#"><img src="delete.jpg" class="deleteimg" ng-click="ShowHide()"></a>
+	<a href="#"><div class="textarea">
+		<p style="margin: 10px 0px 5px 5px; color: black;">Steel Series Mechanical M600 Keyboard</p>
+		<p style="margin: 5px 0px 5px 5px;color: black;"><b>Rs 5000 </b> <strike style="font-size: 12px; color: grey; margin: 5px 0px 5px 5px">Rs 7000</strike></p>
+	</div></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.bg{
+    background-image: url('#');
+    width: 100px;
+    height: 100vh;
+    
+}
+
+
+.form-container
+{
+    position: absolute;
+    top: 15vh;
+    
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+    
+       
+}
+.outer-text{
+    text-align: center;
+    position: relative;
+}
+
+.row_style{
+    margin-top:10px;
+    
+}
